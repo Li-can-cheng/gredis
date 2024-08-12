@@ -1,0 +1,427 @@
+[INFO][server.go:40] 2024/08/11 20:44:06 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 20:58:52 accept link
+[INFO][server.go:50] 2024/08/11 20:59:58 shutting down...
+[INFO][echo.go:78] 2024/08/11 20:59:58 handler shutting down...
+[WARN][echo.go:65] 2024/08/11 20:59:58 read tcp 127.0.0.1:6379->127.0.0.1:61053: use of closed network connection
+[INFO][echo.go:78] 2024/08/11 20:59:58 handler shutting down...
+[INFO][server.go:40] 2024/08/11 21:00:00 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:01:00 accept link
+[INFO][server.go:50] 2024/08/11 21:07:00 shutting down...
+[INFO][echo.go:78] 2024/08/11 21:07:00 handler shutting down...
+[WARN][echo.go:65] 2024/08/11 21:07:00 read tcp 127.0.0.1:6379->127.0.0.1:49521: use of closed network connection
+[INFO][echo.go:78] 2024/08/11 21:07:00 handler shutting down...
+[INFO][server.go:40] 2024/08/11 21:07:01 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:07:27 accept link
+[INFO][server.go:50] 2024/08/11 21:18:39 shutting down...
+[INFO][echo.go:78] 2024/08/11 21:18:39 handler shutting down...
+[WARN][echo.go:65] 2024/08/11 21:18:39 read tcp 127.0.0.1:6379->127.0.0.1:54741: use of closed network connection
+[INFO][echo.go:78] 2024/08/11 21:18:39 handler shutting down...
+[INFO][server.go:40] 2024/08/11 21:19:58 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:20:01 accept link
+[INFO][handler.go:55] 2024/08/11 21:21:19 connection close127.0.0.1:56891
+[INFO][server.go:69] 2024/08/11 21:21:42 accept link
+[INFO][server.go:50] 2024/08/11 21:26:46 shutting down...
+[INFO][handler.go:84] 2024/08/11 21:26:46 handler closing
+[INFO][handler.go:55] 2024/08/11 21:26:46 connection close127.0.0.1:57056
+[INFO][handler.go:84] 2024/08/11 21:26:46 handler closing
+[INFO][server.go:40] 2024/08/11 21:26:47 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:26:48 accept link
+[INFO][handler.go:48] 2024/08/11 21:26:48 connection open127.0.0.1:62060
+[INFO][server.go:50] 2024/08/11 21:30:23 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:30:23 handler closing
+[INFO][handler.go:50] 2024/08/11 21:30:23 receive payload
+[INFO][handler.go:57] 2024/08/11 21:30:23 connection close127.0.0.1:62060
+[INFO][handler.go:86] 2024/08/11 21:30:23 handler closing
+[INFO][server.go:40] 2024/08/11 21:30:24 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:30:27 accept link
+[INFO][handler.go:48] 2024/08/11 21:30:27 connection open127.0.0.1:53789
+[INFO][server.go:50] 2024/08/11 21:31:01 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:31:01 handler closing
+[ERROR][parser.go:130] 2024/08/11 21:31:01 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:53789: use of closed network connection
+[ERROR][parser.go:130] 2024/08/11 21:31:01 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:53789: use of closed network connection
+[INFO][handler.go:50] 2024/08/11 21:31:01 receive payload
+[INFO][handler.go:57] 2024/08/11 21:31:01 connection close127.0.0.1:53789
+[INFO][handler.go:86] 2024/08/11 21:31:01 handler closing
+[INFO][server.go:40] 2024/08/11 21:31:03 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:31:04 accept link
+[INFO][handler.go:48] 2024/08/11 21:31:04 connection open127.0.0.1:53841
+[INFO][parser.go:50] 2024/08/11 21:31:04 Waiting to read a new line...
+[INFO][parser.go:136] 2024/08/11 21:31:51 Read line: a
+
+[INFO][parser.go:50] 2024/08/11 21:31:51 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:31:51 receive payload
+[INFO][parser.go:136] 2024/08/11 21:31:51 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:31:51 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:31:51 receive payload
+[INFO][parser.go:136] 2024/08/11 21:31:52 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:31:52 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:31:52 receive payload
+[INFO][parser.go:136] 2024/08/11 21:32:10 Read line: aaaa
+
+[INFO][parser.go:50] 2024/08/11 21:32:10 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:32:10 receive payload
+[INFO][parser.go:136] 2024/08/11 21:32:13 Read line: aaa
+
+[INFO][parser.go:50] 2024/08/11 21:32:13 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:32:13 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:16 Read line: aa[C[C[C[D[Ca
+
+[INFO][parser.go:50] 2024/08/11 21:34:16 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:16 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:21 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:34:21 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:21 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:25 Read line: [A[A[C[D[C[C[Daa
+
+[INFO][parser.go:50] 2024/08/11 21:34:25 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:25 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:30 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:34:30 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:30 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:30 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:34:30 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:30 receive payload
+[INFO][parser.go:136] 2024/08/11 21:34:32 Read line: aba
+
+[INFO][parser.go:50] 2024/08/11 21:34:32 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:34:32 receive payload
+[INFO][parser.go:136] 2024/08/11 21:36:13 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:36:13 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:36:13 receive payload
+[INFO][parser.go:136] 2024/08/11 21:36:14 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:36:14 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:36:14 receive payload
+[INFO][parser.go:136] 2024/08/11 21:37:11 Read line: ping
+
+[INFO][parser.go:50] 2024/08/11 21:37:11 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:37:11 receive payload
+[INFO][parser.go:136] 2024/08/11 21:37:44 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:37:44 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:37:44 receive payload
+[INFO][parser.go:136] 2024/08/11 21:37:46 Read line: ping
+
+[INFO][parser.go:50] 2024/08/11 21:37:46 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:37:46 receive payload
+[INFO][parser.go:136] 2024/08/11 21:38:22 Read line: //$3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalve\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:38:22 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:38:22 receive payload
+[INFO][parser.go:136] 2024/08/11 21:38:29 Read line: [A
+
+[INFO][parser.go:50] 2024/08/11 21:38:29 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:38:29 receive payload
+[INFO][parser.go:136] 2024/08/11 21:38:30 Read line: $3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalve\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:38:30 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:38:30 receive payload
+[INFO][parser.go:136] 2024/08/11 21:39:06 Read line: *3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalve\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:39:06 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:39:06 receive payload
+[INFO][parser.go:136] 2024/08/11 21:39:46 Read line: *3\r\n$3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalue\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:39:46 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:39:46 receive payload
+[INFO][parser.go:136] 2024/08/11 21:39:59 Read line: *3\r\n$3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalue\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:39:59 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:39:59 receive payload
+[INFO][parser.go:136] 2024/08/11 21:40:40 Read line: $4\r\nPING\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:40:40 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:40:40 receive payload
+[INFO][server.go:50] 2024/08/11 21:43:14 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:43:14 handler closing
+[ERROR][parser.go:133] 2024/08/11 21:43:14 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:53841: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 21:43:14 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:53841: use of closed network connection
+[INFO][parser.go:50] 2024/08/11 21:43:14 Waiting to read a new line...
+[ERROR][parser.go:133] 2024/08/11 21:43:14 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:53841: use of closed network connection
+[INFO][handler.go:50] 2024/08/11 21:43:14 receive payload
+[ERROR][parser.go:54] 2024/08/11 21:43:14 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:53841: use of closed network connection
+[INFO][handler.go:57] 2024/08/11 21:43:14 connection close127.0.0.1:53841
+[INFO][handler.go:86] 2024/08/11 21:43:14 handler closing
+[INFO][server.go:40] 2024/08/11 21:43:20 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:43:26 accept link
+[INFO][handler.go:48] 2024/08/11 21:43:26 connection open127.0.0.1:63206
+[INFO][parser.go:50] 2024/08/11 21:43:26 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:43:29 Read line: [A
+
+[INFO][parser.go:50] 2024/08/11 21:43:29 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:43:29 receive payload
+[INFO][parser.go:137] 2024/08/11 21:43:43 Read line: *3\r\n*3\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:43:43 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:43:43 receive payload
+[INFO][parser.go:137] 2024/08/11 21:43:44 Read line: *3\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:43:44 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:43:44 receive payload
+[INFO][server.go:50] 2024/08/11 21:44:11 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:44:11 handler closing
+[ERROR][parser.go:134] 2024/08/11 21:44:11 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:63206: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 21:44:11 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:63206: use of closed network connection
+[INFO][parser.go:50] 2024/08/11 21:44:11 Waiting to read a new line...
+[ERROR][parser.go:134] 2024/08/11 21:44:11 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:63206: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 21:44:11 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:63206: use of closed network connection
+[INFO][handler.go:50] 2024/08/11 21:44:11 receive payload
+[INFO][handler.go:57] 2024/08/11 21:44:11 connection close127.0.0.1:63206
+[INFO][handler.go:86] 2024/08/11 21:44:11 handler closing
+[INFO][server.go:40] 2024/08/11 21:44:12 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:44:14 accept link
+[INFO][handler.go:48] 2024/08/11 21:44:14 connection open127.0.0.1:63298
+[INFO][parser.go:50] 2024/08/11 21:44:14 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:44:15 Read line: *3\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:44:15 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:44:15 receive payload
+[INFO][parser.go:137] 2024/08/11 21:46:35 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 21:46:35 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:46:41 Read line: 
+
+[ERROR][parser.go:42] 2024/08/11 21:46:41 Recovered from panic: goroutine 21 [running]:
+runtime/debug.Stack()
+	D:/11953/Go/src/runtime/debug/stack.go:24 +0x65
+gredis/resp/parser.parse0.func1()
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:42 +0x2a
+panic({0xcf4780, 0xc00001a1c8})
+	D:/11953/Go/src/runtime/panic.go:884 +0x213
+gredis/resp/parser.readBody({0xc00000e150?, 0x1?, 0x1?}, 0xc000079f10?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:224 +0x20d
+gredis/resp/parser.parse0({0x1c0fcbac898?, 0xc00000a010?}, 0x0?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:102 +0x688
+created by gredis/resp/parser.ParseStream
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:35 +0x98
+
+[INFO][server.go:50] 2024/08/11 21:47:02 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:47:02 handler closing
+[INFO][server.go:40] 2024/08/11 21:47:19 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:47:21 accept link
+[INFO][handler.go:48] 2024/08/11 21:47:21 connection open127.0.0.1:63893
+[INFO][parser.go:50] 2024/08/11 21:47:21 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:47:24 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 21:47:24 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:47:28 Read line: 
+
+[ERROR][parser.go:42] 2024/08/11 21:47:28 Recovered from panic: goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/11953/Go/src/runtime/debug/stack.go:24 +0x65
+gredis/resp/parser.parse0.func1()
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:42 +0x2a
+panic({0xcf4780, 0xc000194060})
+	D:/11953/Go/src/runtime/panic.go:884 +0x213
+gredis/resp/parser.readBody({0xc00018a060?, 0x1?, 0x1?}, 0xc000141f10?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:224 +0x20d
+gredis/resp/parser.parse0({0x264d9c63fc8?, 0xc00000a058?}, 0x0?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:102 +0x688
+created by gredis/resp/parser.ParseStream
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:35 +0x98
+
+[INFO][server.go:50] 2024/08/11 21:47:31 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:47:31 handler closing
+[INFO][server.go:40] 2024/08/11 21:47:43 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:47:44 accept link
+[INFO][handler.go:48] 2024/08/11 21:47:44 connection open127.0.0.1:63934
+[INFO][parser.go:50] 2024/08/11 21:47:44 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:47:54 Read line: *3\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:47:54 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:47:54 receive payload
+[INFO][server.go:50] 2024/08/11 21:49:19 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:49:19 handler closing
+[ERROR][parser.go:134] 2024/08/11 21:49:19 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:63934: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 21:49:19 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:63934: use of closed network connection
+[INFO][parser.go:50] 2024/08/11 21:49:19 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:49:19 receive payload
+[INFO][handler.go:57] 2024/08/11 21:49:19 connection close127.0.0.1:63934
+[INFO][handler.go:86] 2024/08/11 21:49:19 handler closing
+[INFO][server.go:40] 2024/08/11 21:49:20 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:49:22 accept link
+[INFO][handler.go:48] 2024/08/11 21:49:22 connection open127.0.0.1:64078
+[INFO][parser.go:50] 2024/08/11 21:49:22 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:49:31 Read line: *3\r\n
+
+[INFO][parser.go:50] 2024/08/11 21:49:31 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:49:31 receive payload
+[INFO][parser.go:137] 2024/08/11 21:50:02 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 21:50:02 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:50:20 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 21:50:20 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:50:23 Read line: 
+
+[ERROR][parser.go:42] 2024/08/11 21:50:23 Recovered from panic: goroutine 35 [running]:
+runtime/debug.Stack()
+	D:/11953/Go/src/runtime/debug/stack.go:24 +0x65
+gredis/resp/parser.parse0.func1()
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:42 +0x2a
+panic({0xf04780, 0xc0000ab290})
+	D:/11953/Go/src/runtime/panic.go:884 +0x213
+gredis/resp/parser.readBody({0xc0000a63f8?, 0x1?, 0x1?}, 0xc0000fbf10?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:229 +0x20d
+gredis/resp/parser.parse0({0x2527f773fc8?, 0xc00010e000?}, 0x0?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:102 +0x688
+created by gredis/resp/parser.ParseStream
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:35 +0x98
+
+[INFO][server.go:50] 2024/08/11 21:50:28 shutting down...
+[INFO][handler.go:86] 2024/08/11 21:50:28 handler closing
+[INFO][server.go:40] 2024/08/11 21:50:31 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 21:52:16 accept link
+[INFO][handler.go:48] 2024/08/11 21:52:16 connection open127.0.0.1:57655
+[INFO][parser.go:50] 2024/08/11 21:52:16 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 21:52:17 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:52:17 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:52:17 receive payload
+[INFO][parser.go:137] 2024/08/11 21:52:17 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:52:17 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:52:17 receive payload
+[INFO][parser.go:137] 2024/08/11 21:52:18 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:52:18 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:52:18 receive payload
+[INFO][parser.go:137] 2024/08/11 21:52:19 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 21:52:19 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 21:52:19 receive payload
+[INFO][server.go:50] 2024/08/11 22:28:59 shutting down...
+[INFO][handler.go:86] 2024/08/11 22:28:59 handler closing
+[ERROR][parser.go:134] 2024/08/11 22:28:59 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:57655: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 22:28:59 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:57655: use of closed network connection
+[INFO][parser.go:50] 2024/08/11 22:28:59 Waiting to read a new line...
+[ERROR][parser.go:134] 2024/08/11 22:28:59 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:57655: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 22:28:59 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:57655: use of closed network connection
+[INFO][handler.go:50] 2024/08/11 22:28:59 receive payload
+[INFO][handler.go:57] 2024/08/11 22:28:59 connection close127.0.0.1:57655
+[INFO][handler.go:86] 2024/08/11 22:28:59 handler closing
+[INFO][server.go:40] 2024/08/11 22:33:39 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 22:33:41 accept link
+[INFO][handler.go:48] 2024/08/11 22:33:41 connection open127.0.0.1:51042
+[INFO][parser.go:50] 2024/08/11 22:33:41 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:33:43 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:33:43 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:33:45 Read line: 3
+
+[INFO][parser.go:50] 2024/08/11 22:33:45 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:33:47 Read line: 
+
+[ERROR][parser.go:42] 2024/08/11 22:33:47 Recovered from panic: goroutine 34 [running]:
+runtime/debug.Stack()
+	D:/11953/Go/src/runtime/debug/stack.go:24 +0x65
+gredis/resp/parser.parse0.func1()
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:42 +0x2a
+panic({0xa04780, 0xc0000ab248})
+	D:/11953/Go/src/runtime/panic.go:884 +0x213
+gredis/resp/parser.readBody({0xc0000a63c8?, 0x1?, 0x1?}, 0xc0000f9f10?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:236 +0x20d
+gredis/resp/parser.parse0({0x201bf403fc8?, 0xc0000ca048?}, 0x0?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:102 +0x688
+created by gredis/resp/parser.ParseStream
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:35 +0x98
+
+[INFO][server.go:50] 2024/08/11 22:33:58 shutting down...
+[INFO][handler.go:86] 2024/08/11 22:33:58 handler closing
+[INFO][server.go:40] 2024/08/11 22:34:01 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 22:34:04 accept link
+[INFO][handler.go:48] 2024/08/11 22:34:04 connection open127.0.0.1:51084
+[INFO][parser.go:50] 2024/08/11 22:34:04 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:34:05 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:34:05 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:34:06 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:34:06 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:34:08 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:34:08 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:34:09 Read line: 
+
+[ERROR][parser.go:42] 2024/08/11 22:34:09 Recovered from panic: goroutine 19 [running]:
+runtime/debug.Stack()
+	D:/11953/Go/src/runtime/debug/stack.go:24 +0x65
+gredis/resp/parser.parse0.func1()
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:42 +0x2a
+panic({0xa04780, 0xc000088108})
+	D:/11953/Go/src/runtime/panic.go:884 +0x213
+gredis/resp/parser.readBody({0xc000090120?, 0x1?, 0x1?}, 0xc0000a5f10?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:236 +0x20d
+gredis/resp/parser.parse0({0x19f2e1e3fc8?, 0xc000092000?}, 0x0?)
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:102 +0x688
+created by gredis/resp/parser.ParseStream
+	S:/11953/Desk/2_3_summer vacation/go-redis/gredis/resp/parser/parser.go:35 +0x98
+
+[INFO][server.go:50] 2024/08/11 22:34:11 shutting down...
+[INFO][handler.go:86] 2024/08/11 22:34:11 handler closing
+[INFO][server.go:40] 2024/08/11 22:35:45 bind: 0.0.0.0:6379, start listening...
+[INFO][server.go:69] 2024/08/11 22:35:54 accept link
+[INFO][handler.go:48] 2024/08/11 22:35:54 connection open127.0.0.1:65084
+[INFO][parser.go:50] 2024/08/11 22:35:54 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:35:56 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:35:56 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:35:57 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:35:57 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:35:57 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:35:57 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:36:09 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:36:09 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:09 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:10 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:10 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:10 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:13 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:13 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:13 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:17 Read line: 1
+
+[INFO][parser.go:50] 2024/08/11 22:36:17 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:17 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:18 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:18 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:18 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:19 Read line: 2
+
+[INFO][parser.go:50] 2024/08/11 22:36:19 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:19 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:20 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:20 Waiting to read a new line...
+[INFO][handler.go:50] 2024/08/11 22:36:20 receive payload
+[INFO][parser.go:137] 2024/08/11 22:36:32 Read line: *3
+
+[INFO][parser.go:50] 2024/08/11 22:36:32 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:36:35 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:35 Waiting to read a new line...
+[INFO][parser.go:137] 2024/08/11 22:36:36 Read line: 
+
+[INFO][parser.go:50] 2024/08/11 22:36:36 Waiting to read a new line...
+[INFO][server.go:50] 2024/08/11 22:36:42 shutting down...
+[INFO][handler.go:86] 2024/08/11 22:36:42 handler closing
+[ERROR][parser.go:134] 2024/08/11 22:36:42 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:65084: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 22:36:42 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:65084: use of closed network connection
+[INFO][parser.go:50] 2024/08/11 22:36:42 Waiting to read a new line...
+[ERROR][parser.go:134] 2024/08/11 22:36:42 Failed to read line: read tcp 127.0.0.1:6379->127.0.0.1:65084: use of closed network connection
+[ERROR][parser.go:54] 2024/08/11 22:36:42 Error reading line: read tcp 127.0.0.1:6379->127.0.0.1:65084: use of closed network connection
+[INFO][handler.go:50] 2024/08/11 22:36:42 receive payload
+[INFO][handler.go:57] 2024/08/11 22:36:42 connection close127.0.0.1:65084
+[INFO][handler.go:86] 2024/08/11 22:36:42 handler closing
