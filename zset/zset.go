@@ -57,12 +57,26 @@ func (this *ZSet) ZRem(ele string) bool {
 }
 
 func zslDeleteNode(zsl *zskiplist, x *zskiplistNode, updatePosNodes []*zskiplistNode) {
+	// 更新前节点
 	for i := 0; i < len(x.level); i++ {
 		if updatePosNodes[i].level[i].forward == x {
+			updatePosNodes[i].level[i].span += x.level[i].span - 1 // rank为什么不是一个一直维持的值？因为删除会影响所有排名。而用span就可以很好计算排名
 			updatePosNodes[i].level[i].forward = x.level[i].forward
-			updatePosNodes[i].level[i].span = x.level[i].span // rank为什么不是一个一直维持的值？因为删除会影响所有排名。而用span就可以很好计算排名
+		} else {
+			updatePosNodes[i].level[i].span-- // 如果不是直接指向x，说明x在这个层级上并不存在
 		}
 	}
+	//更新后节点
+	if x.level[0].forward != nil {
+		x.level[0].forward.backward = x.backward
+	} else {
+		zsl.tail = x.backward
+	}
+	//可能最高节点被删，那么
+	for zsl.level > 1 && zsl.header.level[zsl.level-1].forward == nil {
+		zsl.level--
+	}
+	zsl.length-- // 跳跃表长度减一
 }
 
 func (this *ZSet) ZScore(ele string) (float64, bool) {
@@ -188,7 +202,7 @@ func (this *ZSet) ZAdd(ele string, score float64) bool {
 
 	// 创建新节点
 	x = newSkipListNode(curLevel, score, ele)
-	for i := 0; i < curLevel; i++ {
+	for i := 0; i < curLevel; i++ { // 说明层数是随机，并不是直接到顶的。
 		x.level[i].forward = updatePosNodes[i].level[i].forward
 		updatePosNodes[i].level[i].forward = x
 
