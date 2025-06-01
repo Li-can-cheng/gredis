@@ -3,6 +3,7 @@ package zset
 import (
 	"fmt"
 	"math/rand/v2"
+	"sync"
 )
 
 const (
@@ -30,9 +31,12 @@ type zskiplist struct {
 type ZSet struct {
 	dict     map[string]float64 // 元素到分数的映射
 	skiplist *zskiplist         // 跳跃表
+	mu       sync.RWMutex
 }
 
 func (this *ZSet) ZRem(ele string) bool {
+	this.mu.Lock()
+	defer this.mu.Unlock()
 	score, ok := this.dict[ele]
 	if !ok {
 		return false
@@ -83,11 +87,15 @@ func zslDeleteNode(zsl *zskiplist, x *zskiplistNode, updatePosNodes []*zskiplist
 }
 
 func (this *ZSet) ZScore(ele string) (float64, bool) {
+	this.mu.RLock()
+	defer this.mu.RUnlock()
 	score, ok := this.dict[ele]
 	return score, ok
 }
 
 func (this *ZSet) ZRank(ele string) (int, bool) {
+	this.mu.RLock()
+	defer this.mu.RUnlock()
 	score, ok := this.dict[ele]
 	if !ok {
 		return -1, false
@@ -120,6 +128,8 @@ func (this *ZSet) ZRevRank(ele string) (int, bool) {
 }
 
 func (this *ZSet) ZRange(start, stop int) []string {
+	this.mu.RLock()
+	defer this.mu.RUnlock()
 	if start > stop || start >= this.skiplist.length {
 		return nil
 	}
@@ -147,6 +157,8 @@ func (this *ZSet) ZRange(start, stop int) []string {
 }
 
 func (this *ZSet) ZRevRange(start, stop int) []string {
+	this.mu.RLock()
+	defer this.mu.RUnlock()
 	if start > stop || start >= this.skiplist.length {
 		return nil
 	}
@@ -224,11 +236,14 @@ func randomLevel() int {
 
 // todo 复盘一下span
 func (this *ZSet) ZAdd(ele string, score float64) bool {
+	this.mu.Lock()
 	if old, ok := this.dict[ele]; ok {
 		if old == score {
 			return false
 		}
+		this.mu.Unlock()
 		this.ZRem(ele)
+		this.mu.Lock()
 	}
 	this.dict[ele] = score
 
@@ -284,10 +299,13 @@ func (this *ZSet) ZAdd(ele string, score float64) bool {
 		this.skiplist.tail = x
 	}
 	this.skiplist.length++
+	this.mu.Unlock()
 	return true
 }
 
 func (this *ZSet) Print() {
+	this.mu.RLock()
+	defer this.mu.RUnlock()
 	fmt.Println("==== Skip List ====")
 	for i := this.skiplist.level - 1; i >= 0; i-- {
 		fmt.Printf("Level %d: ", i)

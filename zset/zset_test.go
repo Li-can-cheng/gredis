@@ -2,6 +2,7 @@ package zset
 
 import (
 	"fmt"
+	"log"
 	"math/rand"
 	"sort"
 	"strings"
@@ -96,9 +97,12 @@ func TestZSetUpdateScore(t *testing.T) {
 	zset := NewZSet()
 	zset.ZAdd("Alice", 85.5)
 	zset.ZAdd("Bob", 72.0)
+	log.Println("aaa")
 
 	// 更新分数
 	zset.ZAdd("Bob", 90.0)
+	log.Println("aaa")
+
 	zset.Print()
 
 	// 验证新分数
@@ -390,6 +394,8 @@ func TestZSetRangeQueries(t *testing.T) {
 
 // 辅助函数：打印跳表结构（用于调试）
 func (zset *ZSet) printSkipList() {
+	zset.mu.RLock()
+	defer zset.mu.RUnlock()
 	fmt.Println("\nSkip List Structure:")
 	fmt.Printf("Level: %d, Length: %d\n", zset.skiplist.level, zset.skiplist.length)
 
